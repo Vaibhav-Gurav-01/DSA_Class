@@ -1,0 +1,17 @@
+void delete_right()
+{
+if(root==null)
+System.out.println("Empty List");
+else
+{
+Node t,t2;
+t=t2=root;//1 while(t.next!=null)
+{
+t2=t;
+t=t.next;
+}
+if(t==root)//single node root=null;//reset root as only node left else
+t2.next = null;
+System.out.println(t.data + " deleted");
+}
+}
